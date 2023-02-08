@@ -1,0 +1,45 @@
+.btn-c {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #424C43;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 50px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #424C43;
+}
+
+.c-card {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bs-cl {
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    box-shadow: 2px 2px 18px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 18px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 18px -5px rgba(0, 0, 0, 0.75);
+}
+
+.bs-c {
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    box-shadow: -2px -2px 18px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -2px 18px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -2px 18px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+
+@media (max-width: 576px) {
+    .banner {
+        display: none;
+    }
+}
