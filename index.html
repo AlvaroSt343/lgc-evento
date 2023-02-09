@@ -26,23 +26,43 @@
                         <p class="title mb-3">
                             Completa tus datos.
                         </p>
-                        <form action="php/save.php" method="post">
+                        <form action="php/saveform.php" method="post">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput" required
-                                    placeholder="name@example.com">
+                                <input type="text" class="form-control" id="floatingInput" required name="nombre"
+                                    placeholder="juan perez">
                                 <label for="floatingInput">Nombre completo</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="floatingInput" required
-                                    placeholder="name@example.com">
+                                <input type="number" class="form-control" id="floatingInput" required name="telefono"
+                                    placeholder="555123456">
                                 <label for="floatingInput">Telefono</label>
                             </div>
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInput" required
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" required name="correo"
                                     placeholder="name@example.com">
                                 <label for="floatingInput">Correo</label>
                             </div>
-                            <button class="btn-c mt-4" type="submit">Enviar</button>
+                            <div class="form-floating mb-3">
+                                <b class="me-4">¿Desea tomar el taller?</b>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="taller" 
+                                        id="inlineRadio1" value="si" checked>
+                                    <label class="form-check-label" for="inlineRadio1">SI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="taller"
+                                        id="inlineRadio2" value="no">
+                                    <label class="form-check-label" for="inlineRadio2">NO</label>
+                                </div>
+                            </div>
+                            <button class="btn-c my-4" type="submit">Enviar</button>
+                            <br>
+                            <small>
+                                Recuerde que para participar en el taller, deberá enviar su comprobante de pago a
+                                <a target="_blank"
+                                    href="mailto:susana.castro@iinfilgc.com">susana.castro@iinfilgc.com</a>
+                                Los requisitos y los datos necesarios llegaran al correo electrónico registrado
+                            </small>
                         </form>
                     </div>
                 </div>
