@@ -13,18 +13,18 @@ $mail = new PHPMailer(true);
 try {
     $mail->SMTPDebug = false;
     $mail->isSMTP();
-    $mail->Host       = 'smtp.ionos.mx;';
+    $mail->Host       = 'mail.sitio-test.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'weeding@dany-wero.com';
-    $mail->Password   = 'Weeding#2022*+';
+    $mail->Username   = 'noreplay@sitio-test.com';
+    $mail->Password   = 'Noreplay#2023*+';
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
-    $mail->setFrom('weeding@dany-wero.com', 'Danny & Wero');
-    $mail->addAddress('alsato.650cc@gmail.com', 'Alvaro2');
+    $mail->setFrom('noreplay@lgc.com', 'LGC');
+    // $mail->addAddress('alsato.650cc@gmail.com', 'Alvaro2');
 
     $mail->isHTML(true);
-    $mail->Subject = 'Nuevo mensaje de contacto / ' . $asunto;
+    $mail->Subject = 'TALLER DE REFORMAS FISCALES - LGC';
 
     $mail->Body    = '     <html> 
          <head> 
