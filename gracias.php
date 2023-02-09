@@ -1,5 +1,10 @@
+<?php
+    session_start();
+    session_destroy();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,5 +13,10 @@
 </head>
 <body>
     <h3>gracias</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="./index.html">inicio</a>
 </body>
 </html>
