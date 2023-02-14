@@ -1,6 +1,6 @@
 <?php
     //   $servername = "localhost";
-    //   $database = "sitiotest_hospedame1";
+    //   $database = "sitiotest_eventolgc";
     //   $username = "sitiotest_alvaro";
     //   $password = "alvaro9981*+";
     
