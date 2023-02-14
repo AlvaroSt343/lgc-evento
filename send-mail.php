@@ -11,17 +11,18 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 try {
-    $mail->SMTPDebug = false;
+    $mail->SMTPDebug = true;
     $mail->isSMTP();
-    $mail->Host       = 'mail.sitio-test.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'noreplay@sitio-test.com';
-    $mail->Password   = 'Noreplay#2023*+';
+    $mail->Host = 'sandbox.smtp.mailtrap.io';
+    $mail->SMTPAuth = true;
+    $mail->Port = 2525;
+    $mail->Username = 'dbbf4bfac2a1b9';
+    $mail->Password = 'eda4bdd1dc23f9';
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
 
-    $mail->setFrom('noreplay@lgc.com', 'LGC');
-    // $mail->addAddress('alsato.650cc@gmail.com', 'Alvaro2');
+
+    $mail->setFrom('no-replay@lgc.com', 'LGC');
+    $mail->addAddress('alsato.650cc@gmail.com', 'Alvaro2');
 
     $mail->isHTML(true);
     $mail->Subject = 'TALLER DE REFORMAS FISCALES - LGC';
